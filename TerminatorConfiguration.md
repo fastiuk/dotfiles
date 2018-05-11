@@ -1,5 +1,5 @@
 # Synopsis
-This is instruction how to install and use **terminator-config**
+This is instruction how to install and use **TerminatorConfiguration**
 
 # Installation
 1. Install all needed tools:
@@ -8,7 +8,7 @@ This is instruction how to install and use **terminator-config**
     $ sudo apt install git
     ```
     
-2. Install **terminator-config**:
+2. Install **TerminatorConfiguration**:
 
     ```sh
     $ git clone https://gist.github.com/e227387b05646539d2b5ceffe84c30e1.git
