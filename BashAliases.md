@@ -17,7 +17,7 @@ This is instruction how to install and use **BashAliases**
     ```
 
 # Uninstallation
-1. You need to remove file **BashAliases** from home directory:
+1. You need to remove file **.bash_aliases** from home directory:
 
     ```sh
     $ rm ~/.bash_aliases
