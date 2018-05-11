@@ -1,0 +1,75 @@
+[global_config]
+  handle_size = 1
+  suppress_multiple_term_dialog = True
+  window_state = maximise
+[keybindings]
+[layouts]
+  [[default]]
+    [[[child0]]]
+      fullscreen = False
+      last_active_term = 75334c61-195d-4ce7-b6d6-f439c65566a7
+      last_active_window = True
+      maximised = True
+      order = 0
+      parent = ""
+      position = 0:24
+      size = 1920, 1056
+      type = Window
+    [[[child1]]]
+      order = 0
+      parent = child0
+      position = 959
+      ratio = 0.499739583333
+      type = HPaned
+    [[[child2]]]
+      order = 0
+      parent = child1
+      position = 527
+      ratio = 0.499526515152
+      type = VPaned
+    [[[child3]]]
+      order = 1
+      parent = child1
+      position = 527
+      ratio = 0.499526515152
+      type = VPaned
+    [[[terminal4]]]
+      command = printf "\e[?2004l"; exec bash
+      order = 0
+      parent = child2
+      profile = default
+      type = Terminal
+      uuid = 75334c61-195d-4ce7-b6d6-f439c65566a7
+    [[[terminal5]]]
+      command = printf "\e[?2004l"; exec bash
+      order = 1
+      parent = child2
+      profile = default
+      type = Terminal
+      uuid = dbeb768b-a304-458c-a4f9-91c79f159cf9
+    [[[terminal6]]]
+      command = printf "\e[?2004l"; exec bash
+      order = 0
+      parent = child3
+      profile = default
+      type = Terminal
+      uuid = 5a0c5740-5f3c-4550-88cc-3954720ee257
+    [[[terminal7]]]
+      command = printf "\e[?2004l"; exec bash
+      order = 1
+      parent = child3
+      profile = default
+      type = Terminal
+      uuid = f3dd9d55-1095-4bf0-8a3f-a641d6b3d764
+[plugins]
+[profiles]
+  [[default]]
+    background_color = "#300a24"
+    background_image = None
+    font = Monospace 12
+    foreground_color = "#ffffff"
+    scroll_on_output = False
+    scrollback_infinite = True
+    scrollbar_position = hidden
+    show_titlebar = False
+    use_system_font = False
