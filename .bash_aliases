@@ -33,6 +33,9 @@ export GROFF_NO_SGR=1                   # for konsole and gnome-terminal
 
 export GREP_COLOR="1;31"
 
+# Make bash history global
+export PROMPT_COMMAND="history -a; history -r"
+
 # Colorised aliases
 alias ll='grc ls -lFha --color'
 alias la='ls -A --color'
@@ -59,7 +62,7 @@ alias gitb='git branch'
 
 # Additional aliases
 alias sudo='sudo ' # For using aliases by sudo
-alias mc='PROMPT_COMMAND="history -a; history -r" EDITOR="subl" mc; history -r'
+alias mc='EDITOR="subl" mc'
 alias gitk='gitk &> /dev/null &'
 alias shutdown='sudo shutdown -h now'
 alias reboot='sudo reboot'
