@@ -57,7 +57,7 @@ alias gitl='git log'
 alias gitb='git branch'
 
 # Additional aliases
-alias mc='EDITOR=subl mc'
+alias mc='PROMPT_COMMAND="history -a; history -r" EDITOR="subl" mc; history -r'
 alias gitk='gitk &> /dev/null &'
 alias shutdown='shutdown -h now'
 
