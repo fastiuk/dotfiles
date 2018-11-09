@@ -49,6 +49,7 @@ alias c='clear'
 alias q='exit'
 alias h='history'
 alias s='subl'
+alias g='grep'
 
 # Git aliases
 alias gits='git status'
@@ -57,9 +58,11 @@ alias gitl='git log'
 alias gitb='git branch'
 
 # Additional aliases
+alias sudo='sudo ' # For using aliases by sudo
 alias mc='PROMPT_COMMAND="history -a; history -r" EDITOR="subl" mc; history -r'
 alias gitk='gitk &> /dev/null &'
-alias shutdown='shutdown -h now'
+alias shutdown='sudo shutdown -h now'
+alias reboot='sudo reboot'
 
 # Show git branch
 parse_git_branch() {
