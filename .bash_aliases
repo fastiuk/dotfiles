@@ -63,13 +63,17 @@ alias gitb='git branch'
 # Additional aliases
 alias sudo='sudo ' # For using aliases by sudo
 alias mc='EDITOR="subl" mc'
-alias gitk='gitk &> /dev/null &'
 alias shutdown='sudo shutdown -h now'
 alias reboot='sudo reboot'
+alias gitk='gitk_without_grabbing_console'
 
-# Show git branch
-parse_git_branch() {
+# Functions
+parse_git_branch() { # Show git branch
     git branch 2> /dev/null | sed -e '/^[^*]/d' -e 's/* \(.*\)/ (\1)/'
+}
+
+gitk_without_grabbing_console() { # Used as alias for gitk but with parameters
+    \gitk $@ &> /dev/null &
 }
 
 # Force color prompt
