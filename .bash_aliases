@@ -53,12 +53,14 @@ alias q='exit'
 alias h='history'
 alias s='subl'
 alias g='grep'
+alias p='ping -c 1'
 
 # Git aliases
 alias gits='git status'
 alias gitd='git diff'
 alias gitl='git log'
 alias gitb='git branch'
+alias gitm='git meld'
 
 # Additional aliases
 alias sudo='sudo ' # For using aliases by sudo
