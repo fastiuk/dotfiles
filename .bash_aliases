@@ -54,6 +54,7 @@ alias h='history'
 alias s='subl'
 alias g='grep'
 alias p='ping -c 1'
+alias m='meld'
 
 # Git aliases
 alias gits='git status'
@@ -64,10 +65,12 @@ alias gitm='git meld'
 
 # Additional aliases
 alias sudo='sudo ' # For using aliases by sudo
-alias mc='EDITOR="subl" mc'
+alias mc='EDITOR="subl" . /usr/lib/mc/mc-wrapper.sh'
 alias shutdown='sudo shutdown -h now'
 alias reboot='sudo reboot'
 alias gitk='gitk_without_grabbing_console'
+alias lsd='list_dirs_only'
+alias untar='tar xvf'
 
 # Functions
 parse_git_branch() { # Show git branch
@@ -76,6 +79,13 @@ parse_git_branch() { # Show git branch
 
 gitk_without_grabbing_console() { # Used as alias for gitk but with parameters
     \gitk $@ &> /dev/null &
+}
+
+list_dirs_only() { # Show only directories in the specified dir
+	if [ ! -z $1 ]; then
+		$1="$1/"
+	fi
+	grc ls -lad $1*/ --color
 }
 
 # Force color prompt
