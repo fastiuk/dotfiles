@@ -1,0 +1,3 @@
+[remote "all"]
+	url = git@github.com:yevfast/terminator-config.git
+	url = git@gitlab.com:yevfast/terminator-config.git
