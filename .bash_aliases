@@ -55,6 +55,7 @@ alias s='subl'
 alias g='grep'
 alias p='ping -c 1'
 alias m='meld'
+alias d='list_dirs_only'
 
 # Git aliases
 alias gits='git status'
@@ -62,14 +63,13 @@ alias gitd='git diff'
 alias gitl='git log'
 alias gitb='git branch'
 alias gitm='git meld'
+alias gitk='gitk_without_grabbing_console'
 
 # Additional aliases
 alias sudo='sudo ' # For using aliases by sudo
 alias mc='EDITOR="subl" . /usr/lib/mc/mc-wrapper.sh'
 alias shutdown='sudo shutdown -h now'
 alias reboot='sudo reboot'
-alias gitk='gitk_without_grabbing_console'
-alias lsd='list_dirs_only'
 alias untar='tar xvf'
 
 # Functions
