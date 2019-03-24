@@ -11,8 +11,8 @@ This is instruction how to install and use **BashAliases**
 2. Install **BashAliases**:
 
     ```sh
-    $ git clone https://gist.github.com/0f2cb98bad6026fb9b2cabc22bca6f18.git
-    $ cp -f 0f2cb98bad6026fb9b2cabc22bca6f18/bash_aliases ~/.bash_aliases
+    $ git clone https://github.com/yevfast/bash-aliases.git
+    $ ln -sf $PWD/bash-aliases/.bash_aliases ~/
     $ . ~/.bashrc
     ```
 
