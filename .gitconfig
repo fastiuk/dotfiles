@@ -1,3 +1,5 @@
+# To include this config run next:
+# git config --local include.path ../.gitconfig
 [remote "all"]
 	url = git@github.com:yevfast/terminator-config.git
 	url = git@gitlab.com:yevfast/terminator-config.git
