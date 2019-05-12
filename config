@@ -19,56 +19,31 @@
       order = 0
       parent = child0
       position = 959
-      ratio = 0.499739583333
+      ratio = 0.499739447629
       type = HPaned
-    [[[child2]]]
-      order = 0
-      parent = child1
-      position = 527
-      ratio = 0.499526515152
-      type = VPaned
-    [[[child3]]]
-      order = 1
-      parent = child1
-      position = 527
-      ratio = 0.499526515152
-      type = VPaned
-    [[[terminal4]]]
+    [[[terminal2]]]
       command = printf "\e[?2004l"; exec bash
       order = 0
-      parent = child2
+      parent = child1
       profile = default
       type = Terminal
       uuid = 75334c61-195d-4ce7-b6d6-f439c65566a7
-    [[[terminal5]]]
+    [[[terminal3]]]
       command = printf "\e[?2004l"; exec bash
       order = 1
-      parent = child2
-      profile = default
-      type = Terminal
-      uuid = dbeb768b-a304-458c-a4f9-91c79f159cf9
-    [[[terminal6]]]
-      command = printf "\e[?2004l"; exec bash
-      order = 0
-      parent = child3
+      parent = child1
       profile = default
       type = Terminal
       uuid = 5a0c5740-5f3c-4550-88cc-3954720ee257
-    [[[terminal7]]]
-      command = printf "\e[?2004l"; exec bash
-      order = 1
-      parent = child3
-      profile = default
-      type = Terminal
-      uuid = f3dd9d55-1095-4bf0-8a3f-a641d6b3d764
 [plugins]
 [profiles]
   [[default]]
-    background_color = "#300a24"
-    background_image = None
+    background_color = "#2e3436"
+    background_darkness = 0.97
+    background_type = transparent
+    cursor_color = "#ffffff"
     font = Monospace 12
-    foreground_color = "#ffffff"
-    scroll_on_output = False
+    foreground_color = "#839496"
     scrollback_infinite = True
     scrollbar_position = hidden
     show_titlebar = False
