@@ -44,6 +44,7 @@ alias dir='dir --color'
 alias vdir='vdir --color'
 alias ping="grc ping"
 alias netstat="grc netstat"
+alias ifconfig="grc ifconfig"
 
 # Short aliases
 alias u='cd ..'
