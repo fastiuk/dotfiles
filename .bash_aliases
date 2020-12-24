@@ -89,6 +89,14 @@ list_dirs_only() { # Show only directories in the specified dir
 	grc ls -lad $1*/ --color
 }
 
+gitsubl() {
+    git config --global core.editor "subl -n -w"
+}
+
+gitvim() {
+    git config --global core.editor "vim"
+}
+
 # Force color prompt
 force_color_prompt=yes
 if [ -n "$force_color_prompt" ]; then
