@@ -22,3 +22,8 @@ This is instruction how to install and use **BashAliases**
     ```sh
     $ rm ~/.bash_aliases
     ```
+## Install from terminal
+Run the next command in the terminal:
+```
+/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/fastiuk/bash-aliases/main/setup.sh)"
+```
