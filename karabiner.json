@@ -179,6 +179,9 @@
                                 "from": {
                                     "key_code": "right_command"
                                 },
+                                "parameters": {
+                                    "basic.to_if_held_down_threshold_milliseconds": 0
+                                },
                                 "to": [
                                     {
                                         "key_code": "tab",
@@ -186,6 +189,11 @@
                                             "command"
                                         ],
                                         "repeat": false
+                                    }
+                                ],
+                                "to_if_held_down": [
+                                    {
+                                        "key_code": "right_command"
                                     }
                                 ],
                                 "type": "basic"
