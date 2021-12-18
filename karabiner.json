@@ -64,7 +64,7 @@
                                 },
                                 "to": [
                                     {
-                                        "shell_command": "open '/Applications/Telegram.app'"
+                                        "shell_command": "open '/Applications/Telegram Desktop.app'"
                                     }
                                 ],
                                 "type": "basic"
@@ -82,6 +82,28 @@
                                 "to": [
                                     {
                                         "shell_command": "open '/System/Applications/Calculator.app'"
+                                    }
+                                ],
+                                "type": "basic"
+                            }
+                        ]
+                    },
+                    {
+                        "description": "Launch apps by keybindings",
+                        "manipulators": [
+                            {
+                                "from": {
+                                    "key_code": "escape",
+                                    "modifiers": {
+                                        "mandatory": [
+                                            "left_control",
+                                            "left_shift"
+                                        ]
+                                    }
+                                },
+                                "to": [
+                                    {
+                                        "shell_command": "open '/System/Applications/Utilities/Activity Monitor.app'"
                                     }
                                 ],
                                 "type": "basic"
@@ -179,9 +201,6 @@
                                 "from": {
                                     "key_code": "right_command"
                                 },
-                                "parameters": {
-                                    "basic.to_if_held_down_threshold_milliseconds": 0
-                                },
                                 "to": [
                                     {
                                         "key_code": "tab",
@@ -189,11 +208,6 @@
                                             "command"
                                         ],
                                         "repeat": false
-                                    }
-                                ],
-                                "to_if_held_down": [
-                                    {
-                                        "key_code": "right_command"
                                     }
                                 ],
                                 "type": "basic"
@@ -213,40 +227,6 @@
                         "vendor_id": 1452
                     },
                     "ignore": false,
-                    "manipulate_caps_lock_led": true,
-                    "simple_modifications": [
-                        {
-                            "from": {
-                                "key_code": "non_us_backslash"
-                            },
-                            "to": [
-                                {
-                                    "key_code": "grave_accent_and_tilde"
-                                }
-                            ]
-                        },
-                        {
-                            "from": {
-                                "key_code": "grave_accent_and_tilde"
-                            },
-                            "to": [
-                                {
-                                    "key_code": "non_us_backslash"
-                                }
-                            ]
-                        }
-                    ]
-                },
-                {
-                    "disable_built_in_keyboard_if_exists": false,
-                    "fn_function_keys": [],
-                    "identifiers": {
-                        "is_keyboard": true,
-                        "is_pointing_device": false,
-                        "product_id": 34304,
-                        "vendor_id": 1452
-                    },
-                    "ignore": true,
                     "manipulate_caps_lock_led": true,
                     "simple_modifications": []
                 }
