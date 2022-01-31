@@ -11,7 +11,7 @@ To build it from source code use the next steps:
 # Download fish shell source code
 wget https://github.com/fish-shell/fish-shell/releases/download/3.3.1/fish-3.3.1.tar.xz
 tar xvf fish-3.3.1.tar.xz
-cd fish-3.1.1
+cd fish-3.3.1
 # Build
 mkdir build; cd build
 cmake ..
