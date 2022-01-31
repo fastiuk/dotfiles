@@ -12,7 +12,7 @@ SETUVAR fish_color_error:ff0000
 SETUVAR fish_color_escape:00a6b2
 SETUVAR fish_color_history_current:\x2d\x2dbold
 SETUVAR fish_color_host:green\x1e\x2d\x2dbold
-SETUVAR fish_color_host_remote:yellow
+SETUVAR fish_color_host_remote:green\x1e\x2d\x2dbold
 SETUVAR fish_color_normal:normal
 SETUVAR fish_color_operator:00a6b2
 SETUVAR fish_color_param:00afff
