@@ -30,6 +30,15 @@ rm -r ~/.config/fish/
 ln -s (pwd)/fish-config/fish ~/.config/fish
 ```
 
+You can also include your bash aliases to fish environment.
+Just link it to .profile file.
+```
+cd
+ln -s .bash_aliases .profile
+exit
+fish
+```
+
 # Kudos
 
 This config uses [bass](https://github.com/edc/bass) plugin to read bash-like rc files.
