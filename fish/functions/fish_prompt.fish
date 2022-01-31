@@ -27,6 +27,31 @@ function fish_prompt --description 'Write out the prompt'
     set -l statusb_color (set_color $bold_flag $fish_color_status)
     set -l prompt_status (__fish_print_pipestatus "[" "]" "|" "$status_color" "$statusb_color" $last_pipestatus)
 
-    echo -n -s (prompt_login)':' (set_color $color_cwd) (prompt_pwd) $normal (fish_vcs_prompt) $normal " "$prompt_status $suffix " "
+    echo -n -s (prompt_login) ':' (set_color $color_cwd) (prompt_pwd) $normal " " $prompt_status $suffix " "
+end
 
+function fish_time_prompt -d "Print time in human readable format"
+    set -l T (math round "$CMD_DURATION / 1000")
+    switch (uname)
+        case Darwin
+            if test "$T" -gt 3600
+                echo -n -s (date -u -r $T "+%-kh %-Mm %-Ss")
+            else if test "$T" -gt 60
+                echo -n -s (date -u -r $T "+%-Mm %-Ss")
+            else if test "$T" -gt 5
+                echo -n -s (date -u -r $T "+%-Ss")
+            end
+        case Linux
+            if test "$T" -gt 3600
+                echo -n -s (date -u -d @$T "+%-kh %-Mm %-Ss")
+            else if test "$T" -gt 60
+                echo -n -s (date -u -d @$T "+%-Mm %-Ss")
+            else if test "$T" -gt 5
+                echo -n -s (date -u -d @$T "+%-Ss")
+            end
+    end
+end
+
+function fish_right_prompt -d "Write out the right prompt"
+    echo -n -s (set_color cyan) (fish_time_prompt) $normal (set_color yellow) (fish_vcs_prompt) $normal
 end
