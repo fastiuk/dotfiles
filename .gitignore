@@ -1,0 +1,4 @@
+# Ignore functions due to work related stuff
+# only add manually.
+fish/functions/*
+
