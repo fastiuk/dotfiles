@@ -41,7 +41,6 @@ fish
 
 # Kudos
 
-This config uses [bass](https://github.com/edc/bass) plugin to read bash-like rc files.
-Prepare desired bashrc or other *rc files and source it in ~/.profile file.
-fish-config will read ~/.profile and you will be able to use your favorite aliases/functions.
+* This config uses [bass](https://github.com/edc/bass) plugin to read bash-like rc files. Prepare desired bashrc or other \*rc files and source it in ~/.profile file. fish-config will read ~/.profile and you will be able to use your favorite aliases/functions.
+* [Nathaniel](https://unix.stackexchange.com/users/155795/nathaniel) for [this answer](https://unix.stackexchange.com/a/278024/500340]). It allows you to use "sudo !!" - my favourite shortcut.
 
