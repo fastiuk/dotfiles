@@ -38,8 +38,8 @@ export PROMPT_COMMAND="history -a; history -r"
 
 # Colorised aliases
 alias ll='grc ls -lFha --color'
-alias la='ls -A --color'
-alias l='grc ls -CFl --color'
+alias la='grc ls -A --color'
+alias l='grc ls -CFlh --color'
 alias dir='dir --color'
 alias vdir='vdir --color'
 alias ping="grc ping"
@@ -48,6 +48,15 @@ alias ifconfig="grc ifconfig"
 
 # Short aliases
 alias u='cd ..'
+alias uu='cd ../..'
+alias uuu='cd ../../..'
+alias uuuu='cd ../../../..'
+alias uuuuu='cd ../../../../..'
+alias uuuuuu='cd ../../../../../..'
+alias uuuuuuu='cd ../../../../../../..'
+alias uuuuuuuu='cd ../../../../../../../..'
+alias uuuuuuuuu='cd ../../../../../../../../..'
+alias uuuuuuuuuu='cd ../../../../../../../../../..'
 alias b='cd - &> /dev/null'
 alias c='clear'
 alias q='exit'
@@ -57,11 +66,12 @@ alias g='grep'
 alias p='ping -c 1'
 alias m='meld'
 alias d='list_dirs_only'
+alias f='fff_cd'
 
 # Git aliases
 alias gits='git status'
 alias gitd='git diff'
-alias gitl='git log'
+alias gitl='git log --decorate --graph'
 alias gitb='git branch'
 alias gitm='git meld'
 alias gitk='gitk_without_grabbing_console'
@@ -97,6 +107,12 @@ gitvim() {
     git config --global core.editor "vim"
 }
 
+fff_cd()
+{
+    fff "$@"
+    cd "$(cat "${XDG_CACHE_HOME:=${HOME}/.cache}/fff/.fff_d")"
+}
+
 # Force color prompt
 force_color_prompt=yes
 if [ -n "$force_color_prompt" ]; then
@@ -117,3 +133,9 @@ else
     PS1='${debian_chroot:+($debian_chroot)}\u@\h:\w$(parse_git_branch)\$ '
 fi
 unset color_prompt force_color_prompt
+
+
+# Work specific custom aliases and funcs
+if [ -f ~/.bash_aliases_work ]; then
+	. ~/.bash_aliases_work
+fi
