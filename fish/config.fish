@@ -1,4 +1,12 @@
 if status is-interactive
     # Commands to run in interactive sessions can go here
-    bass source ~/.profile
+    # Try to source .profile
+    if test -f ~/.profile
+        bass source ~/.profile
+    end
+
+    # Try to source .bash_aliases
+    if test -f ~/.bash_aliases
+        bass source ~/.bash_aliases
+    end
 end
