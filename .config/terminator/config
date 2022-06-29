@@ -1,0 +1,50 @@
+[global_config]
+  handle_size = 1
+  suppress_multiple_term_dialog = True
+  window_state = maximise
+[keybindings]
+[layouts]
+  [[default]]
+    [[[child0]]]
+      fullscreen = False
+      last_active_term = 75334c61-195d-4ce7-b6d6-f439c65566a7
+      last_active_window = True
+      maximised = True
+      order = 0
+      parent = ""
+      position = 0:24
+      size = 1920, 1056
+      type = Window
+    [[[child1]]]
+      order = 0
+      parent = child0
+      position = 959
+      ratio = 0.499739447629
+      type = HPaned
+    [[[terminal2]]]
+      command = printf "\e[?2004l"; exec bash
+      order = 0
+      parent = child1
+      profile = default
+      type = Terminal
+      uuid = 75334c61-195d-4ce7-b6d6-f439c65566a7
+    [[[terminal3]]]
+      command = printf "\e[?2004l"; exec bash
+      order = 1
+      parent = child1
+      profile = default
+      type = Terminal
+      uuid = 5a0c5740-5f3c-4550-88cc-3954720ee257
+[plugins]
+[profiles]
+  [[default]]
+    background_color = "#2e3436"
+    background_darkness = 0.97
+    background_type = transparent
+    cursor_color = "#ffffff"
+    font = Monospace 12
+    foreground_color = "#839496"
+    scrollback_infinite = True
+    scrollbar_position = hidden
+    show_titlebar = False
+    use_system_font = False
