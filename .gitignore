@@ -1,4 +1,13 @@
 # Ignore functions due to work related stuff
 # only add manually.
-fish/functions/*
+
+.config/fish/completions/
+.config/fish/conf.d/
+.config/fish/fish_plugins
+.config/fish/functions/fish_mode_prompt.fish
+.config/fish/functions/fish_prompt.fish
+.config/fish/functions/fisher*
+.config/fish/functions/nvos_*
+.config/fish/functions/_tide*
+.config/fish/functions/tide*
 
